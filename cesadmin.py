@@ -14,7 +14,7 @@ class User(UserMixin):
         self.username=username
         self.password = password
 
-muzammil = User(1,"muzammil","muznawaz@98")
+muzammil = User(1,"muzammil","@123admin")
 krishna =  User(2,"krishna","@345admin")
 abhishek = User(3,"abhishek","@987admin")
 
