@@ -1,0 +1,80 @@
+*,
+*:after,
+*:before{
+  margin:0;
+  padding:0;
+}
+html{
+  font-family: 'Lato',sans-serif;
+
+}
+body{
+  box-sizing: border-box;
+  color: orangered;
+
+}
+
+.row{
+  width:90%;
+  margin-left: 5%;
+  margin-right: 5%;
+
+
+}
+.logo{
+  width:100%;
+}
+.col-1-of-2{
+  width: 40%;
+  padding:1rem;
+  float:left;
+  margin-top: 1.5rem;
+  position: relative;
+}
+.col-1-of-2:not(:last-child){
+  margin-right: 4rem;
+}
+/* start loginbox*/
+.login-box{
+
+  position: absolute;
+  text-align: center;
+  margin-top: 12vh;
+  padding: 3vh;
+  left:30%;
+}
+.login-form{
+
+  padding:1rem;
+}
+label{
+  display: inline-block;
+  text-align: left;
+  width:100%;
+
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 150%;
+}
+
+input{
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+
+input[type=submit]{
+  position: absolute;
+  font-size: 150%;
+  color:orangered;
+  margin-top: 1rem;
+  left:35%;
+
+}
+.submit{
+  width:100%;
+  background-color: black;
+  text-align: center;
+}
+
+/*----end loginbox---*/

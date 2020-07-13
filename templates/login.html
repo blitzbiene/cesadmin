@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Muzammil Nawaz">
+    <link rel="icon" href="{{url_for('static',filename='ces_logo.png')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='login.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>CES|ADMIN</title>
+  </head>
+  <body>
+    <div class="row">
+
+
+      <div class="col-1-of-2">
+        <img src="{{url_for('static',filename='ces_logo.png')}}" alt="" class="logo">
+      </div>
+      <div class="col-1-of-2">
+        <div class="login-box">
+          <form action="/login" class="login-form" method="POST">
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="Enter Username" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Enter Password" required>
+            {%if error%}
+            <p>Incorrect username or password</p>
+            {%endif%}
+            <div class="submit"><input type="submit" name="submit" value="LOGIN"></div>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+    
+
+  </body>
+</html>

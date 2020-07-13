@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Muzammil Nawaz">
+    <link rel="icon" href="{{url_for('static',filename='ces_logo.png')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='events.css')}}">
+    <title>CES | {{name}}</title>
+  </head>
+  <body>
+       <nav class="section-nav">
+         <div class="row navbar">
+          <ul class="nav-item">
+            <li> <a href="/logout">Logout</a></li>
+            <li> <a href="/certificates">Certificates</a></li>
+            <li class="active"> <a href="/events">Events</a></li>
+            <li> <a href="/notifications">Notifications</a></li>
+            <li > <a href="/dashboard">Dashboard</a></li>
+          </ul>
+         </div>
+        </nav>
+
+        <div class="row section-add-search">
+           <div class="col-1-of-2 btn-here">
+             <button type="button" class="btn-large">ADD EVENTS</button>
+           </div>
+           <div class="col-1-of-2 btn-here">
+             <button type="button" class="btn-large">DELETE EVENTS</button>
+           </div>
+        </div>
+
+        <div class="row section-info">
+          <h1 class="info__name">Welcome {{name}}</h1>
+          <p>This is your events page which will be styled and developed later.</p>
+        </div>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+*,
+*:after,
+*:before{
+  margin:0;
+  padding:0;
+}
+html{
+  font-family: 'Lato',sans-serif;
+  font-weight: 400;
+}
+body{
+  box-sizing: border-box;
+  color:orangered;
+}
+a{
+  color:orangered;
+}
+
+.row{
+  width:90%;
+  margin: auto 5%;
+}
+.col-1-of-2{
+  width: 40%;
+  padding:1rem;
+  float:left;
+  margin-top: 1rem;
+  position: relative;
+}
+.col-1-of-2:not(:last-child){
+  margin-right: 4rem;
+}
+/* nav section*/
+.navbar{
+  border-bottom: 2px solid black;
+  margin-top: 0.5rem;
+}
+.nav-item{
+  list-style: none;
+  padding: 1rem;
+}
+.nav-item li a{
+  text-decoration: none;
+}
+.nav-item li{
+  display: inline-block;
+  font-size: 150%;
+  text-transform: uppercase;
+  margin-right: 3rem;
+}
+
+/*end nav section*/
+
+/* start info section*/
+.section-info{
+  margin-top: 2rem;
+  text-align: center;
+}
+.info__name{
+  text-transform:uppercase;
+}
+.section-info p{
+  line-height: 145%;
+  font-size: 145%;
+}
+.active a{
+   color: black ;
+}
+
+/*end info section*/
+
+/*start section-add-search*/
+.btn-here{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.btn-large{
+  color:black;
+  padding: 1rem;
+  font-size: 125%;
+}
+
+
+/*end section-add-search*/
